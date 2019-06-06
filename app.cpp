@@ -26,14 +26,15 @@
 #endif
 
 /* メインタスク */
-void main_task(intptr_t unused) {
+void main_task(intptr_t unused)
+{
   Controller controller;
   controller.printDisplay(1, "hackev_on_off_linetrace");
   controller.printDisplay(2, " create from KatLab-MiyazakiUniv");
 
   // キャリブレーション開始
   controller.ledSetColorOrange();
-  Machine machine{controller};
+  Machine machine{ controller };
   machine.calibration();
 
   // 待ち時間

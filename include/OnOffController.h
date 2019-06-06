@@ -10,9 +10,9 @@ class OnOffController : public LineTracer {
   void setParam(const int& threthold_, const int& forward_, const int& turn_);
 
  private:
-  int threthold; // OnOff閾値
-  int forward; // 前進値
-  int turn; // 回転値
+  int threthold;  // OnOff閾値
+  int forward;    // 前進値
+  int turn;       // 回転値
 };
 
 #endif

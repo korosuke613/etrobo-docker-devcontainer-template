@@ -1,6 +1,7 @@
 #include "Machine.h"
 
-void Machine::calibration() {
+void Machine::calibration()
+{
   // スピーカ音量設定
   controller.speakerSetVolume(100);
 
@@ -18,9 +19,10 @@ void Machine::calibration() {
   onOffController.setParam((black + white) / 2, 30, 10);
 }
 
-void Machine::run() {
-  while (1) {
-    if (controller.buttonIsPressedEnter() == true) {
+void Machine::run()
+{
+  while(1) {
+    if(controller.buttonIsPressedEnter() == true) {
       controller.tslpTsk(500); /* 500msecウェイト */
       break;
     }
@@ -31,8 +33,8 @@ void Machine::run() {
 
   int leftPwm = 0;
   int rightPwm = 0;
-  while (1) {
-    if (controller.buttonIsPressedBack() == true) {
+  while(1) {
+    if(controller.buttonIsPressedBack() == true) {
       controller.tslpTsk(500); /* 500msecウェイト */
       controller.leftWheel.setPWM(0);
       controller.rightWheel.setPWM(0);
@@ -48,9 +50,10 @@ void Machine::run() {
   }
 }
 
-int Machine::setBrightness() {
-  while (1) {
-    if (controller.buttonIsPressedEnter() == true) {
+int Machine::setBrightness()
+{
+  while(1) {
+    if(controller.buttonIsPressedEnter() == true) {
       controller.tslpTsk(500); /* 500msecウェイト */
       break;
     }
@@ -62,7 +65,7 @@ int Machine::setBrightness() {
 
   int result = 0;
   constexpr int num = 10;
-  for (int i = 0; i < num; i++) {
+  for(int i = 0; i < num; i++) {
     result += controller.getBrightness();
     controller.tslpTsk(4); /* 4ms wait */
   }
