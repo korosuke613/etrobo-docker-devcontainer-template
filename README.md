@@ -1,4 +1,4 @@
-# etrobo-docker-vscode-devcontainer-sample
+# etrobo-docker-devcontainer-template
 
 VS Code Remote Developmentの機能を用いて、ETロボコンで使う`ev3rt`向けプログラムの開発環境を容易に構築するサンプルコードです。
 
