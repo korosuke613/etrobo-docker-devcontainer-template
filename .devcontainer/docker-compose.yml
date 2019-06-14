@@ -7,4 +7,5 @@ services:
       - ../:/home/hrp2/sdk/workspace/product
       - ~/.gitconfig:/root/.gitconfig
     environment:
-      SHELL: "/bin/bash"      
+      SHELL: "/bin/bash"
+      HOME: "/home/hrp2"
