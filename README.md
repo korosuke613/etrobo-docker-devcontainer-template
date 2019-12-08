@@ -23,3 +23,8 @@ VS Code Remote Developmentの機能を用いて、ETロボコンで使う`ev3rt`
 ```
 
 `app`という実行ファイルができているはず。
+
+## Sample program
+サンプルプログラムのクラス図です。
+![Class diagram](./class_diagram.png "Class diagram")
+
